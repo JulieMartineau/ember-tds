@@ -29,7 +29,7 @@ export default class Ex1Controller extends Controller {
   }
   @action
   clear() {
-    console.log('clear');
+    this.content = '';
   }
   @action
   update() {
