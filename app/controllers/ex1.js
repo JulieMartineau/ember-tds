@@ -4,6 +4,7 @@ import { tracked } from '@glimmer/tracking';
 
 export default class Ex1Controller extends Controller {
   @tracked content = '';
+  @tracked info = '';
   MAX = 100;
   get size() {
     return this.MAX - this.content.length;
@@ -25,11 +26,12 @@ export default class Ex1Controller extends Controller {
 
   @action
   save() {
-    console.log('save');
+    this.info = 'Note modifié';
   }
   @action
   clear() {
     this.content = '';
+    this.info = '';
   }
   @action
   update() {
