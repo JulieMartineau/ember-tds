@@ -9,8 +9,17 @@ export default class Ex1Controller extends Controller {
     return this.MAX - this.content.length;
   }
 
+  // eslint-disable-next-line getter-return
   get style() {
-    return
+    if (this.content.length <= 50) {
+      return 'alert-info';
+    }
+    if (this.content.length > 50 && this.content.length < 80) {
+      return 'alert-warning';
+    }
+    if (this.content.length >= 80) {
+      return 'alert-danger';
+    }
   }
   @tracked info;
 

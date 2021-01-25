@@ -5,7 +5,9 @@
   <Textarea class="form-control mb-3" @value={{this.content}}/>
     <button class="btn btn-primary" {{on "click" this.save}}>Enregister</button>
     <button class="btn btn-primary" {{on "click" this.clear}}>Effacer</button>
-  <div class="alert aria-info"> Il reste {{this.size}} caractères disponibles.</div>
+  <div class="alert {{this.style }}"> Il reste {{this.size}} caractères disponibles.</div>
+
+
   </div>
 </div>
 {{outlet}}
