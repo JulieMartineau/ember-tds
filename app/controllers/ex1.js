@@ -26,7 +26,7 @@ export default class Ex1Controller extends Controller {
 
   @action
   save() {
-    this.info = 'Note modifié';
+    this.info = 'Note sauvegardée';
   }
   @action
   clear() {
@@ -35,6 +35,6 @@ export default class Ex1Controller extends Controller {
   }
   @action
   update() {
-    console.log('update');
+    this.info = 'Note modifiée';
   }
 }
