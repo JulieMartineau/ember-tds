@@ -22,16 +22,27 @@ export default class Ex1Controller extends Controller {
       return 'alert-danger';
     }
   }
+
+  // eslint-disable-next-line getter-return
+  get lestyle() {
+    if (this.content != '') {
+      return 'alert-success';
+    }
+  }
   @tracked info;
 
   @action
   save() {
-    this.info = 'Note sauvegardée';
+    if (this.content != '') {
+      this.info = 'Note sauvegardée';
+    }
   }
   @action
   clear() {
-    this.content = '';
-    this.info = '';
+    if (this.content != '') {
+      this.content = '';
+      this.info = '';
+    }
   }
   @action
   update() {

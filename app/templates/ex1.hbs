@@ -8,7 +8,7 @@
     <button class="btn btn-primary" {{on "click" this.clear}}>Effacer</button>
   </div>
   <div class="alert {{this.style }}"> Il reste {{this.size}} caractères disponibles.</div>
-  <div class="alert"> {{this.info}}</div>
+  <div class="alert {{this.lestyle }}"> {{this.info}}</div>
 </div>
 {{outlet}}
 
