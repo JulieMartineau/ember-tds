@@ -1,14 +1,24 @@
 {{page-title "Ex1"}}
-<div class="card">
-  <div class="card-header bg-primary text-light"> Ex1 : Note application</div>
-  <div class="card-body">
-  <Textarea class="form-control mb-3" @value={{this.content}}
-  @input={{this.update}}/>
-    <button class="btn btn-primary" {{on "click" this.save}}>Enregister</button>
-    <button class="btn btn-primary" {{on "click" this.clear}}>Effacer</button>
+<div class="container">
+
+  <div class="card">
+    <div class="card-header bg-primary text-light">Ex1 : Note application</div>
+    <div class="card-body">
+      <b>Note :</b><br><br>
+      <Textarea {{on "keydown" update}} class="form-control" @placeholder="Entrez votre texte" @value={{this.content}} @maxlength=100 /><br>
+      <!-- équivalent de keydown : keypress (onclick) -->
+      @input={{this.update}}/>
+      <button class="btn btn-primary" {{action "save2" this.content }} {{ action "save" }} >Enregistrer</button>
+      <button class="btn btn-primary" {{action "clear"}}>Effacer</button>
+
+      <br><br>
+    </div>
+      <div class="alert alert-info">Nombre de caractères restant : {{ this.size }}</div>
+      <div class="alert {{this.lestyle }}"> {{this.info}}</div>
+
+
+    </div>
   </div>
-  <div class="alert {{this.style }}"> Il reste {{this.size}} caractères disponibles.</div>
-  <div class="alert {{this.lestyle }}"> {{this.info}}</div>
+
 </div>
 {{outlet}}
-
