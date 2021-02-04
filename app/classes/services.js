@@ -4,7 +4,7 @@ export default class Services{
   constructor(services) {
     this.services=services;
   }
-  @computed('services.eachactive')
+  @computed('services.@each.active')
   get countActive(){
     /*let r=0;
   this.services.forEach(s=>{
@@ -12,7 +12,7 @@ export default class Services{
       r++;
     }
     return r;*/
-    return this.services.filter((s)=>s.active).length;
+   return this.services.filter((s)=>s.active).length;
   };
 
   get sumActive(){
