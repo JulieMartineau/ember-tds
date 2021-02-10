@@ -15,7 +15,7 @@
   <ul class="list-group">
     {{#each @model.services as |service|}}
       <li class="list-group-item {{if service.active 'active' ''}}"
-        {{action "toggleActive" service}}>{{service.name}} {{service.price}} </li>
+        {{action "toggleActive" service}}>{{service.name}} {{ format-currency service.price '€'}} </li>
 
     {{/each}}
   </ul><br><hr><br>
