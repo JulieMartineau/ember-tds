@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="66cd12de-6a83-4a2b-8a24-c88f66b2c390" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classes/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/classes/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/format-currency.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/format-currency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/ex2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/ex2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/ex2/promo.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/ex2/promo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/ex2.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/ex2.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/ex2/promo.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/ex2/promo.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +55,8 @@
       <workItem from="1612456328809" duration="2604000" />
       <workItem from="1612646829008" duration="232000" />
       <workItem from="1612647064873" duration="1807000" />
-      <workItem from="1612965359173" duration="4993000" />
+      <workItem from="1612965359173" duration="6004000" />
+      <workItem from="1613026844739" duration="2001000" />
     </task>
     <servers />
   </component>

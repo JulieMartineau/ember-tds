@@ -1,9 +1,13 @@
 import Route from '@ember/routing/route';
-import Services from "../../classes/services";
 import { promos } from 'tds/data/datas';
 
 export default class Ex2PromoRoute extends Route {
   model() {
-    return new Services(promos);
+    return this.modelFor('ex2');
   }
+
+  afterModel(model){ //modifie le modèle une fois qu'il est correctement chargé
+    model.promos=promos;
+  }
+
 }

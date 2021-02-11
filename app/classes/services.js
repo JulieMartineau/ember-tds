@@ -1,6 +1,12 @@
 import { computed } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 export default class Services{
   services=[];
+  //codes promos chargés
+  promo={};
+  //code saisi par le user
+  @tracked codePromo;
+
   constructor(services) {
     this.services=services;
   }
@@ -23,5 +29,10 @@ export default class Services{
     })
       return r;
   }
-
+  get promoTx(){
+    return this.promos[this.codePromo]||'code invalide';
+  }
+  get montantPromo(){
+    return this.promoTx*this.sumActive;
+  }
 }

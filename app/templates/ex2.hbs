@@ -15,14 +15,14 @@
   <ul class="list-group">
     {{#each @model.services as |service|}}
       <li class="list-group-item {{if service.active 'active' ''}}"
-        {{action "toggleActive" service}}>{{service.name}} {{ format-currency service.price '€'}} </li>
+        {{action "toggleActive" service}}>{{service.name}} {{ format-currency service.price }} </li>
 
     {{/each}}
   </ul><br><hr><br>
 
   <div class="row">
     <div class="col">
-      <h3>Total : {{format-currency @model.sumActive '€'}}</h3>
+      <h3>Total : {{format-currency @model.sumActive }}</h3>
       <div>
         <div class="input-group">
           <span class="input-group-addon">
@@ -33,7 +33,7 @@
      </div>
     </div>
     <div class="col">
-      <button type="button" class="btn btn-primary" {{action "toggleVisible" }} >Valider</button>
+      <button class="btn btn-primary" {{action "togglePromo"}}>Promotion</button>
     </div>
   </div><br>
 
