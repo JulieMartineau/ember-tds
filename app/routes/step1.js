@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-export default class Step1Route extend Route{
+export default class Step1Route extends Route {
   model(){
     return
     [
@@ -47,6 +47,9 @@ export default class Step1Route extend Route{
         "image": "https://tutorialzine.com/media/2016/12/the-languages-and-frameworks-you-should-learn-in-2017.png"
       }
     ]
+  }
+  setupController(controller, model){
+    controller.dispoItems = model;
   }
 
 }
