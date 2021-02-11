@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
 export default class MultiSelectComponent extends Component {
-  @tracked elements = [];
+  @tracked elements = []; //tableau d'éléments
   selected = [];
   id = 'id';
 
