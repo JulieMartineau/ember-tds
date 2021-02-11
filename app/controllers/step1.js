@@ -7,12 +7,15 @@ export default class Step1Controller extends Controller {
   includedItems=[];
   @tracked dispoItems_ = [];
   @tracked includedItems_ = [];
+
   @action changeDispo(elements){
     this.dispoItems_ = elements;
-    //Affecte elements à dispoItems_, action déclenchée sur le @onChange de la liste des dispoItems
   }
   @action changeIncluded(elements){
     this.includedItems_ = elements;
-    //Affecte elements à includedItems_, action déclenchée sur le @onChange de la liste des includedItems
+  }
+  @action add(source, dest, what){
+    dest.pushObjects(what);
+    source.removeObjects(what);
   }
 }
