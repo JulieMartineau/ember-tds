@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a371d4f-edc8-47e9-9a63-72a5da197126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/multi-select.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/multi-select.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/multi-select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/step1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/step1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/step1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/step1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/step1.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/step1.hbs" afterDir="false" />
@@ -48,7 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1613029234894</updated>
       <workItem from="1613029238705" duration="10162000" />
-      <workItem from="1613057416179" duration="2558000" />
+      <workItem from="1613057416179" duration="3371000" />
+      <workItem from="1613313965748" duration="3728000" />
     </task>
     <servers />
   </component>

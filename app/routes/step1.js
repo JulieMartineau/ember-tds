@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default class Step1Route extends Route {
   model(){
-    [
+    return [
       {
         "id": "1",
         "url": "https://tutorialzine.com/2018/01/what-every-developer-should-know-about-cryptocurrency",
@@ -47,7 +47,8 @@ export default class Step1Route extends Route {
       }
     ]
   }
-  setupController(controller, model) {
-    controller.dispoItems = model;
+  setupController(controller, model){
+    controller.dispoItems=model;
   }
+
 }
