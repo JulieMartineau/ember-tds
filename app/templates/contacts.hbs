@@ -1,0 +1,26 @@
+{{page-title "Contacts"}}
+<table>
+  <thead>
+  <tr>
+    <td>Nom</td>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each @model.contacts as |contact|}}
+    <tr>
+      <td>{{contact.nom}}</td>
+      <td>{{contact.prenom}}</td>
+      <td>{{contact.email}}</td>
+      <td>
+        <button></button>
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+  <tfoot>
+  <tr>
+    <td><LinkTo @route="contacts.add">Ajouter</LinkTo></td>
+  </tr>
+  </tfoot>
+</table>
+{{outlet}}
