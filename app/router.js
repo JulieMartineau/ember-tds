@@ -15,10 +15,10 @@ Router.map(function () {
   });
   this.route('categories', function() {
     this.route('add');
-    this.route('update',{ path: '/:category_id' });
-    this.route('contacts', { path: '/:category_id' }, function() {
+    this.route('update',{ path: '/update/:category_id' });
+    this.route('contacts', { path: '/contacts/:category_id' }, function() {
       this.route('add');
-      this.route('update',{ path: '/:category_id' });
+      this.route('update',{ path: '/contacts/update/:contact_id' });
     });
   });
 });
