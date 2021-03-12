@@ -9,6 +9,9 @@
   <div class="col">
     <Input @value={{@model.nom}} placeholder="Entrez une catégorie" class="form-control"/>
   </div>
+  <div class="col">
+    <button {{action "save" @model}} class="btn btn-primary">Valider</button>
+  </div>
 </div>
 </tbody>
 {{outlet}}

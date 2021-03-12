@@ -16,7 +16,7 @@
       <Input @value={{@model.email}} placeholder="Entrez votre email" type="email" class="form-control"/>
     </div>
     <div class="col">
-      <button {{action "save" @model}} class="btn btn-primary">Valider</button>
+      <button {{ action "save" @model }} class="btn btn-primary">Valider</button>
     </div>
     <div class="col">
       <LinkTo @route="contacts" class="btn btn-secondary">Annuler</LinkTo>

@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/categories/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/categories/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/categories/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/categories/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/contacts/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/contacts/add.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,9 @@
       <workItem from="1613372261713" duration="134000" />
       <workItem from="1613566264391" duration="10028000" />
       <workItem from="1613740960358" duration="4338000" />
-      <workItem from="1613994449685" duration="7216000" />
+      <workItem from="1613994449685" duration="11534000" />
+      <workItem from="1615128498243" duration="1818000" />
+      <workItem from="1615549960344" duration="594000" />
     </task>
     <servers />
   </component>

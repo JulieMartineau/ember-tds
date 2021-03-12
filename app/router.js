@@ -20,5 +20,6 @@ Router.map(function () {
       this.route('add');
       this.route('update',{ path: '/contacts/update/:contact_id' });
     });
+    this.route('test');
   });
 });
