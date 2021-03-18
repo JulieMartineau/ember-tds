@@ -11,5 +11,8 @@ Router.map(function () {
   this.route('Abstractroute');
   this.route('board');
   this.route('order', { path: 'order/:order_id' });
-  this.route('sections');
+  this.route('sections', function() {
+    this.route('add');
+    this.route('addProduct');
+  });
 });
