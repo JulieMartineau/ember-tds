@@ -1,12 +1,10 @@
 {{page-title "Sections"}}
 <div class="container">
   <h2>Gestion des sections</h2>
-  <div class="form-group">
-    <p>
-      <button class="btn btn-primary">Nouvelle section...</button>
-      <button  class="btn btn-primary">Nouveau Produit...</button>
-    </p>
-  </div>
+  <div class="card-body">
+      <LinkTo class="btn btn-success" @route="sections.add">Nouvelle section...</LinkTo>
+      <LinkTo  class="btn btn-success" @route="sections.addProduct">Nouveau Produit...</LinkTo>
+
   <table class="table table-striped"><br>
     <tbody>
     {{#each @model as |section|}}
@@ -14,12 +12,12 @@
         <td>{{ section.name}}</td>
         <td>{{ section.products.length }}</td>
         <td>
-
+        <button class="btn btn-secondary btn-sm" {{ action "delete" section }}><i class="far fa-trash-alt"></i></button>
         </td>
       </tr>
     {{/each}}
     </tbody>
   </table>
-
+  </div>
 </div>
 {{outlet}}

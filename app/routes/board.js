@@ -16,8 +16,4 @@ export default class BoardRoute extends abstractroute {
       });
     }
   }
-
-  @action section(){
-    this.transitionTo('sections');
-  }
 }

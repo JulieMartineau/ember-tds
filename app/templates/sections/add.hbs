@@ -1,2 +1,8 @@
 {{page-title "Add"}}
+<div class="input-group mb-3">
+  <Input @value={{ @model.name}} type="text" class="form-control" placeholder="Nouvelle section"></Input>
+  <div class="input-group-append">
+    <button {{ action "save" @model }} class="btn btn-outline-secondary" type="button">Ajouter</button>
+  </div>
+</div>
 {{outlet}}
