@@ -1,8 +1,33 @@
 {{page-title "Edit"}}
-{{#each @model as |product|}}
-  <tr>
-    <td>{{ model.products.name}}</td>
-    <td>{{ model.products.price }}</td>
-  </tr>
-{{/each}}
-{{outlet}}
+<div class="ui grid">
+  <div class="eight wide column">
+    <h2>{{@model.name}} - {{@model.products.length}} produits</h2>
+  </div>
+  <div class="eight wide column">
+    <LinkTo class="ui right floated secondary button" @route="sections">Aller aux sections</LinkTo>
+    <LinkTo class="ui right floated secondary button" @route="board">Tableau de bord</LinkTo>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Gestion des stocks
+  </div>
+  <div class="card-body">
+    <LinkTo class="btn btn-success" @route="sections.edit.addProductInSection">Nouveau Produit</LinkTo>
+    {{outlet}}
+    <table class="table table-striped">
+      <tbody>
+      {{#each @model.products as |product|}}
+          <tr>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>
+              <button class="btn btn-secondary btn-sm"  {{ action "edit" section }}><i class="fas fa-edit"></i> </button>
+              <button class="btn btn-secondary btn-sm" {{ action "delete" section }}><i class="far fa-trash-alt"></i></button>
+            </td>
+          </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
