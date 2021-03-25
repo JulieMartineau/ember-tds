@@ -1,0 +1,8 @@
+{{page-title "Edit"}}
+{{#each @model as |product|}}
+  <tr>
+    <td>{{ model.products.name}}</td>
+    <td>{{ model.products.price }}</td>
+  </tr>
+{{/each}}
+{{outlet}}

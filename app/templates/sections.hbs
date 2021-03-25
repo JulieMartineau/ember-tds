@@ -12,6 +12,7 @@
         <td>{{ section.name}}</td>
         <td>{{ section.products.length }}</td>
         <td>
+          <LinkTo class="btn btn-secondary btn-sm" @route="sections.edit" @model={{section.id}}><i class="fas fa-edit"></i> </LinkTo>
         <button class="btn btn-secondary btn-sm" {{ action "delete" section }}><i class="far fa-trash-alt"></i></button>
         </td>
       </tr>
@@ -19,5 +20,6 @@
     </tbody>
   </table>
   </div>
+  <LinkTo class="btn btn-dark" @route="board">Tableau de bord</LinkTo>
 </div>
 {{outlet}}
