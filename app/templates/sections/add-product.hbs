@@ -1,2 +1,29 @@
 {{page-title "AddProduct"}}
+<div class="ui grid">
+  <div class="eight wide column">
+    <h2>Ajouter un produit</h2>
+  </div>
+  <div class="eight wide column">
+    <LinkTo class="ui right floated secondary button" @route="sections">Aller aux sections</LinkTo>
+    <LinkTo class="ui right floated secondary button" @route="board">Tableau de bord</LinkTo>
+  </div>
+</div>
+<form>
+  <div class="form-group">
+    <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+      <div class="col-sm">
+        <Input type="text" class="form-control" placeholder="Nom" @value={{@model.name}}/>
+      </div>
+      <div class="col-sm">
+        <Input type="text" class="form-control" placeholder="Prix" @value={{@model.price}}/>
+      </div>
+      <div class="col-sm">
+        <Input type="text" class="form-control" placeholder="Promo" @value={{@model.promotion}}/>
+      </div>
+    </div>
+    <Textarea class="form-control" rows="3" placeholder="Commentaires" @value={{@model.comments}}/>
+    <button class="btn btn-outline-secondary" type="button" {{action "save" @model}}>Valider</button>
+    <LinkTo class="btn btn-outline-secondary" @route="section.edit" @model={{@model.id}}>Annuler</LinkTo>
+  </div><hr>
+</form>
 {{outlet}}

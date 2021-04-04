@@ -15,7 +15,7 @@
     </div>
     <Textarea class="form-control" rows="3" placeholder="Commentaires" @value={{@model.comments}}/>
     <button class="btn btn-outline-secondary" type="button" {{action "save" @model}}>Valider</button>
-    <LinkTo class="btn btn-outline-secondary" @route="section.edit" @model={{@model.id}}>Annuler</LinkTo>
+    <LinkTo class="btn btn-outline-secondary" @route="sections.edit" @model={{@model.id}}>Annuler</LinkTo>
   </div><hr>
 </form>
 {{outlet}}
