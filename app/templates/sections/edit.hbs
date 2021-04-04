@@ -22,8 +22,8 @@
             <td>{{product.name}}</td>
             <td>{{product.price}}</td>
             <td>
-              <button class="btn btn-secondary btn-sm"  {{ action "edit" section }}><i class="fas fa-edit"></i> </button>
-              <button class="btn btn-secondary btn-sm" {{ action "delete" section }}><i class="far fa-trash-alt"></i></button>
+              <button class="btn btn-secondary btn-sm"  {{ action "edit" product }}><i class="fas fa-edit"></i> </button>
+              <button class="btn btn-secondary btn-sm" {{ action "delete" product }}><i class="far fa-trash-alt"></i></button>
             </td>
           </tr>
       {{/each}}

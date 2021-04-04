@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a371d4f-edc8-47e9-9a63-72a5da197126" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/sections/add-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/sections/add-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/sections/edit/add-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/sections/edit/add-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/sections/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/sections/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/sections/add-product.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/sections/add-product.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/sections/edit/add-product.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/sections/edit/add-product.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ember-cli-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/ember-cli-build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/sections/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/sections/edit.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,7 @@
       <workItem from="1616673899730" duration="8356000" />
       <workItem from="1616688343568" duration="4510000" />
       <workItem from="1617374432784" duration="5371000" />
-      <workItem from="1617540547707" duration="3426000" />
+      <workItem from="1617540547707" duration="4317000" />
     </task>
     <servers />
   </component>
