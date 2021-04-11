@@ -17,4 +17,10 @@ Router.map(function () {
       this.route('addProduct');
     });
   });
+  this.route('myOrders', function() {
+    this.route('prepare', { path: 'prepare:order_id'}, function() {
+      this.route('cancel');
+      this.route('prepared');
+    });
+  });
 });
