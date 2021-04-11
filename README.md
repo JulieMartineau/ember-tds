@@ -1,6 +1,6 @@
 # TD n°6, 7 et 8 Store
 
-Les objectifs initiales de cette application est de permettre aux commerçants de gérer son magasin (sections et produits) 
+Les objectifs initiaux de cette application est de permettre aux commerçants de gérer son magasin (sections et produits) 
 ainsi que la préparation des commandes et leur retrait par les clients, en interne. 
 
 
