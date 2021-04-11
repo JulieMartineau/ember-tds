@@ -10,6 +10,10 @@ Ce framewok est en Javascript et s'appuie sur une architecture de type MVC
 
 
 ## Prise en main
+Note pour M. Héron : un problème semble être apparu lors de mon dernier commit hors je n'ai pas pu push la rectification et donc je n'ai pas non plus créer de release
+![image](https://user-images.githubusercontent.com/77676647/114320811-0e843d80-9b18-11eb-836f-612d86ab3190.png)
+Le problème semble être dans le fichier my-orders.js
+
 Tout d'abord, l'employé doit se connecter avec son adresse mail et son code.
 Ensuite, le board s'affiche, en cliquant sur le bouton Sections on retrouve toutes les sections différentes du store.
 On peut supprimer une section mais c'est aussi sur cette page que l'utilisateur peut ajouter une nouvelle section ou un nouveau produit.
