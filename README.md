@@ -17,13 +17,13 @@ En appuyant sur le bouton d'édition on accède à la liste des différents prod
 
 ## Documentation technique
 Utilisation de Semantic-UI pour la partie CSS.
-Serializers :
+### Serializers
 - application.js
 - orderdetail.js
 - section.js
-Services :
+### Services
 - user-auth.js
-Routes :
+### Routes
 - abstractroute.js
 - board.js
 - index.js
@@ -37,10 +37,10 @@ Routes :
 - my-orders/prepare.js
 - my-orders/prepare/cancel.js
 - my-orders/prepare/prepared.js
-Adapters :
--application.js
-Controllers :
--products.js
+### Adapters
+- application.js
+### Controllers
+- products.js
 
 ## Running / Development
 
